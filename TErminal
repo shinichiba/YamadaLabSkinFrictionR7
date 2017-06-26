@@ -1,0 +1,13 @@
+lxterminal
+lxterminal terminal --working-directory=/home/pi/BUIDINHBA
+
+ssh-keygen -t rsa -b 4096 -C "yamadalabproject@gmail.com"
+passphrase   solidarity
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+clip < ~/.ssh/id_rsa.pub
+
+Check :
+ssh -T git@github.com
+# Attempts to ssh to GitHub
+ssh://git@github.com/shinichiba/YamadaLabSkinFrictionR7.git
