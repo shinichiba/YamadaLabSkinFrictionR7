@@ -1,14 +1,14 @@
 # From https://www.baldengineer.com/raspberry-pi-gui-tutorial.html 
 # by James Lewis (@baldengineer)
-# Minimal python code to start PyQt5 GUI
+# Minimal python code to start PyQt4 GUI
 #
 
 # always seem to need this
 import sys
 
 # This gets the Qt stuff
-import PyQt5
-from PyQt5.QtWidgets import *
+import PyQt4
+from PyQt4.QtWidgets import *
 
 # This is our window from QtCreator
 import mainwindow_auto
